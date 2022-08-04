@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emails</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="js/validar.js"></script>
+</head>
+<body>
+    <h1 id="titulo"><span>Envio de Emails</span></h1>
+    <div id="email">
+        <div class="grupo-controles">
+            <label for="destino" class="labels-controlos">Para:</label>
+            <input type="email"   name="destino" id="destino" class="controlos entrada" >
+            <span class="estado">*Preenche o campo...</span>
+        </div>
+    
+        <div class="grupo-controles">
+            <label for="assunto" class="labels-controlos">Assunto:</label>
+            <input type="text" name="assunto" id="assunto" class="controlos entrada">
+            <span class="estado" >*Não requirer um assunto</span>
+        </div>
+        
+        <div class="grupo-controles">       
+            <label for="conteudo" class="labels-controlos">Conteudo:</label>
+            <textarea spellcheck="true" name="conteudo" id="conteudo" class="controlos area-texto"></textarea>
+        </div>
+        
+        <button class="btn" id="btn-limpar" onclick="limpar()">Limpar</button> 
+        <button class="btn" id="btn-enviar" onclick="enviar()">Enviar</button> 
+        <div class="apagar-fix"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
